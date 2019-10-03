@@ -25,6 +25,7 @@ public class HomeController {
     @PostMapping("/processjob")
     public String processJob(@ModelAttribute Job job) {
         jobRepository.save(job);
+        System.out.println(job.getPostedDate() + " and " + job.getTitle());
         return "redirect:/";
     }
 
