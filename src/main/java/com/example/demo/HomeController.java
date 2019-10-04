@@ -52,5 +52,9 @@ public class HomeController {
     }
 
     // methods for processing the search
-
+    @PostMapping("/processSearchbyTitle")
+    public String processSearchbyTitle(Model model, @RequestParam(name = "search") String titleSearch) {
+        model.addAttribute("jobsByTitle", jobRepository.findByTitleContainingIgnoreCase(titleSearch));
+        return "searchList";
+    }
 }
