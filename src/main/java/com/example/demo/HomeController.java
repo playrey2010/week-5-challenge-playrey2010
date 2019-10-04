@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+
 @Controller
 public class HomeController {
     @Autowired
@@ -13,7 +15,8 @@ public class HomeController {
     @RequestMapping("/")
     public String listJobs(Model model) {
         model.addAttribute("jobs", jobRepository.findAll());
-        return "joblist";
+        return "base";
+//        return "joblist";
     }
 
     @GetMapping("/add")
@@ -24,8 +27,9 @@ public class HomeController {
 
     @PostMapping("/processjob")
     public String processJob(@ModelAttribute Job job) {
+        LocalDate tempDate = LocalDate.now();
+        job.setPostedDate(tempDate);
         jobRepository.save(job);
-        System.out.println(job.getPostedDate() + " and " + job.getTitle());
         return "redirect:/";
     }
 

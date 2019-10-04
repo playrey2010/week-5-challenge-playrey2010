@@ -17,7 +17,7 @@
 <div th:each="job : ${jobs}">
     <p th:text="${job.title}"></p>
     <p th:text="${job.description}"></p>
-    <p th:text="${job.postedDate}"></p>
+    <p th:text="${#temporals.format(job.postedDate,'EEEE, MMMM dd yyyy')}"></p>
     <p th:text="${job.employer}"></p>
     <p th:text="${job.phone}"></p>
     <div><a th:href="@{/update/{id}(id=${job.id})}">
@@ -27,7 +27,6 @@
     </a> - <a th:href="@{/delete/{id}(id=${job.id})}">
         Delete
     </a> </div>
-                        <!--    space for update - details - delete-->
 </div>
 
 

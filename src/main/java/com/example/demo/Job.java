@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.LocalDate;
 import java.util.Date;
 @Entity
 public class Job {
@@ -12,7 +13,7 @@ public class Job {
     private long id;
     private String title;
     private String description;
-    private Date postedDate;
+    private LocalDate postedDate;
     private String employer;
     private String phone;
 
@@ -20,13 +21,14 @@ public class Job {
     public Job() {
     }
 
-    public Job(String title, String description, Date postedDate, String employer, String phone) {
+    public Job(String title, String description, LocalDate postedDate, String employer, String phone) {
         this.title = title;
         this.description = description;
         this.postedDate = postedDate;
         this.employer = employer;
         this.phone = phone;
     }
+
     // getters and setters methods
     public long getId() {
         return id;
@@ -52,11 +54,11 @@ public class Job {
         this.description = description;
     }
 
-    public Date getPostedDate() {
+    public LocalDate getPostedDate() {
         return postedDate;
     }
 
-    public void setPostedDate(Date postedDate) {
+    public void setPostedDate(LocalDate postedDate) {
         this.postedDate = postedDate;
     }
 
@@ -75,5 +77,8 @@ public class Job {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
+
 
 }

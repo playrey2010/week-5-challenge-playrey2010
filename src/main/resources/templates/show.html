@@ -14,7 +14,7 @@
 
 <p th:text="${job.title}"></p>
 <p th:text="${job.description}"></p>
-<p th:text="${job.postedDate}"></p>
+<p th:text="${#temporals.format(job.postedDate,'EEEE, MMMM dd yyyy')}"></p>
 <p th:text="${job.employer}"></p>
 <p th:text="${job.phone}"></p>
 
