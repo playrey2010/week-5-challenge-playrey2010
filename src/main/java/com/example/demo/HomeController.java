@@ -15,6 +15,7 @@ public class HomeController {
     @RequestMapping("/")
     public String listJobs(Model model) {
         model.addAttribute("jobs", jobRepository.findAll());
+//        return "tobedel";
         return "base";
 //        return "joblist";
 //        return "sandbox";
@@ -23,7 +24,8 @@ public class HomeController {
     @GetMapping("/add")
     public String addJob(Model model) {
         model.addAttribute("job", new Job());
-        return "jobform";
+        return "tobedel";
+//        return "jobform";
     }
 
     @PostMapping("/processjob")
@@ -43,7 +45,7 @@ public class HomeController {
     @RequestMapping("/update/{id}")
     public String updateJob(@PathVariable("id") long id, Model model) {
         model.addAttribute("job", jobRepository.findById(id).get());
-        return "jobform";
+        return "tobedel";
     }
 
     @RequestMapping("/delete/{id}")
