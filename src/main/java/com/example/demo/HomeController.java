@@ -17,6 +17,7 @@ public class HomeController {
         model.addAttribute("jobs", jobRepository.findAll());
         return "base";
 //        return "joblist";
+//        return "sandbox";
     }
 
     @GetMapping("/add")

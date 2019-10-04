@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" th:href="@{/css/base.css}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
     <!--    Google fonts!-->
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 </head>
-<body>
 <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -30,42 +35,77 @@
                 </li>
             </ul>
             <form th:action="@{/processSearchbyTitle}" class="form-inline mt-2 mt-md-0" method="post">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search by job title..." aria-label="Search" name="search">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search by job title..." aria-label="Search" name="search" required>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
 </header>
+<body class="w3-light-grey">
 <!-- Begin page content -->
-<main role="main" class="container">
-    <h1 class="mt-5">Sticky footer with fixed navbar</h1>
-    <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Viverra orci sagittis eu volutpat odio. Tortor at auctor urna nunc id cursus. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Egestas congue quisque egestas diam in arcu cursus. Augue ut lectus arcu bibendum at varius vel. Dignissim sodales ut eu sem integer vitae justo. Lacinia at quis risus sed vulputate. Aliquet lectus proin nibh nisl condimentum id venenatis a. Bibendum neque egestas congue quisque egestas diam. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Tellus orci ac auctor augue. Nam at lectus urna duis convallis convallis tellus. In nibh mauris cursus mattis molestie a iaculis at erat. Vitae turpis massa sed elementum tempus egestas.
+<div role="main" id="page-container" class="container">
+    <div id="content-wrap">
 
-        Viverra tellus in hac habitasse platea. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Vel eros donec ac odio. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Non diam phasellus vestibulum lorem sed. Turpis cursus in hac habitasse platea dictumst quisque. Pellentesque habitant morbi tristique senectus et netus et. Pellentesque sit amet porttitor eget dolor morbi. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Orci sagittis eu volutpat odio facilisis mauris sit amet. Id volutpat lacus laoreet non curabitur gravida. Massa vitae tortor condimentum lacinia quis vel. Platea dictumst quisque sagittis purus sit. Tortor dignissim convallis aenean et tortor at. Lectus sit amet est placerat in egestas. Facilisis gravida neque convallis a cras semper. Felis donec et odio pellentesque diam volutpat commodo sed. Aliquet bibendum enim facilisis gravida neque convallis a cras. Aliquam malesuada bibendum arcu vitae.
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-        Nam at lectus urna duis convallis convallis tellus id. Nisi porta lorem mollis aliquam ut. Amet aliquam id diam maecenas ultricies mi eget mauris. Eu sem integer vitae justo eget magna fermentum. Interdum velit euismod in pellentesque massa placerat duis. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Arcu vitae elementum curabitur vitae nunc. Ac placerat vestibulum lectus mauris. Eget mi proin sed libero enim sed faucibus turpis in. Amet dictum sit amet justo. Ultrices gravida dictum fusce ut placerat orci. Justo donec enim diam vulputate ut pharetra. Duis at consectetur lorem donec massa sapien faucibus et. Egestas congue quisque egestas diam in arcu cursus euismod quis. Id cursus metus aliquam eleifend. Fermentum odio eu feugiat pretium.
+            <!-- The Grid -->
+            <div class="w3-row-padding">
 
-        Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Vel facilisis volutpat est velit egestas dui id ornare arcu. Volutpat blandit aliquam etiam erat velit. In vitae turpis massa sed elementum tempus. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Nisi est sit amet facilisis magna etiam tempor. Dignissim sodales ut eu sem integer vitae justo eget. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Eu augue ut lectus arcu bibendum at varius vel pharetra. Lorem mollis aliquam ut porttitor leo a.
+                <!-- Left Column -->
 
-        Porta nibh venenatis cras sed felis. Ac turpis egestas integer eget aliquet. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Id interdum velit laoreet id donec ultrices tincidunt arcu non. Laoreet sit amet cursus sit amet dictum sit amet. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. At volutpat diam ut venenatis tellus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Lacus vestibulum sed arcu non odio euismod. Arcu dui vivamus arcu felis bibendum ut.
 
-        Rhoncus mattis rhoncus urna neque viverra justo nec. Volutpat odio facilisis mauris sit amet. Quis blandit turpis cursus in hac habitasse. Enim sit amet venenatis urna cursus eget nunc scelerisque. Ipsum dolor sit amet consectetur adipiscing elit duis. Lacinia at quis risus sed vulputate odio. Amet commodo nulla facilisi nullam vehicula. Mattis ullamcorper velit sed ullamcorper morbi. Faucibus ornare suspendisse sed nisi lacus sed. Fermentum iaculis eu non diam. Sed vulputate odio ut enim blandit. Molestie ac feugiat sed lectus vestibulum. Accumsan tortor posuere ac ut consequat semper.
+                <!-- Right Column -->
+                <div class="w3-col">
 
-        Etiam dignissim diam quis enim lobortis. Congue nisi vitae suscipit tellus mauris a diam maecenas. Posuere morbi leo urna molestie at elementum eu facilisis sed. At ultrices mi tempus imperdiet nulla malesuada. Amet consectetur adipiscing elit ut aliquam. Congue nisi vitae suscipit tellus mauris a. Imperdiet sed euismod nisi porta lorem. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Dignissim cras tincidunt lobortis feugiat. Facilisis leo vel fringilla est ullamcorper eget nulla. Risus quis varius quam quisque id diam. Odio eu feugiat pretium nibh ipsum consequat. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Risus nullam eget felis eget nunc lobortis mattis aliquam. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. At lectus urna duis convallis. In iaculis nunc sed augue lacus viverra.
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-text-grey w3-padding-16"><i
+                                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>See a list of
+                            available jobs!</h2>
+                        <div class="w3-container" th:each="job : ${jobs}">
+                            <h3 class="w3-opacity" th:inline="text"><b>[[${job.title}]] @ [[${job.employer}]]</b></h3>
+                            <h6 class="w3-text-teal" th:inline="text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>[[${#temporals.format(job.postedDate,'EEEE, MMMM dd yyyy')}]] -
+                                <span class="w3-tag w3-blue w3-round">Recent posting!</span> - Contact: [[${job.phone}]] </h6>
+                            <p th:inline="text" class="jobdescription">[[${job.description}]]</p>
+                            <hr>
+                        </div>
 
-        Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Posuere morbi leo urna molestie at elementum eu. Viverra mauris in aliquam sem fringilla ut. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Sit amet aliquam id diam maecenas ultricies mi. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Non nisi est sit amet facilisis magna etiam tempor orci. Eleifend quam adipiscing vitae proin sagittis nisl. Quam viverra orci sagittis eu volutpat odio. Dui nunc mattis enim ut tellus elementum sagittis. Vitae nunc sed velit dignissim. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Etiam non quam lacus suspendisse.
+                    </div>
 
-        Congue nisi vitae suscipit tellus mauris a. Mi eget mauris pharetra et ultrices neque ornare aenean. Cum sociis natoque penatibus et magnis. Amet justo donec enim diam vulputate. Rutrum quisque non tellus orci ac auctor. Curabitur vitae nunc sed velit dignissim. Viverra maecenas accumsan lacus vel facilisis volutpat. In nisl nisi scelerisque eu ultrices. Pharetra sit amet aliquam id diam maecenas ultricies. Leo duis ut diam quam nulla porttitor massa id neque. Aliquam sem et tortor consequat id porta. Mauris in aliquam sem fringilla ut morbi tincidunt. Vel pretium lectus quam id. In ante metus dictum at tempor commodo ullamcorper a lacus. Est velit egestas dui id. Ac turpis egestas sed tempus urna et. Egestas sed sed risus pretium quam vulputate dignissim. Sapien pellentesque habitant morbi tristique.
+                    <!-- End Right Column -->
+                </div>
 
-        Urna neque viverra justo nec. Elementum tempus egestas sed sed risus. Eleifend quam adipiscing vitae proin. Sollicitudin tempor id eu nisl. In metus vulputate eu scelerisque. Leo vel fringilla est ullamcorper eget. Est lorem ipsum dolor sit amet consectetur adipiscing. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Eget mauris pharetra et ultrices neque ornare aenean euismod. Velit dignissim sodales ut eu sem integer. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sed nisi lacus sed viverra tellus in hac habitasse platea. Vitae congue eu consequat ac felis. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Ipsum dolor sit amet consectetur adipiscing.</p>
-</main>
 
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
     </div>
-</footer>
+
+
+</div>
+
+<br><br><br><br><br>
+
+<div class="container" id="footer-container">
+    <footer id="footer" class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+</div>
+<!--<footer class="footer">-->
+<!--    <div class="container">-->
+<!--        <span class="text-muted">Place sticky footer content here.</span>-->
+<!--    </div>-->
+<!--</footer>-->
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
