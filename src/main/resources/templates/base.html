@@ -18,7 +18,7 @@
     <!--    Google fonts!-->
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 </head>
-<header>
+<header th:fragment="fixed-navbar">
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="/">JobHop</a>
@@ -102,15 +102,15 @@
 
 <br><br><br><br><br>
 
-<div class="container" id="footer-container">
+<div th:fragment="footerdiv" class="container" id="footer-container">
     <footer id="footer" class="w3-container w3-blue w3-center w3-margin-top">
         <p>Find us on social media.</p>
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+<!--        <i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-instagram w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-snapchat w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-twitter w3-hover-opacity"></i>-->
+        <a href="https://www.linkedin.com/in/reynaldo-aponte-845766188/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
 <!--        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
     </footer>
 </div>
