@@ -1,8 +1,5 @@
 # week-5-challenge-playrey2010
 
-
-[TOC]
-
 #### Challenge description
 
 > REQUIREMENTS
